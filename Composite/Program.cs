@@ -13,8 +13,8 @@ namespace Composite
             Component root = new Composite("Canvas root");
             Component circle1 = new Leaf("Circle 1");
             Component rectangle = new Leaf("Rectangle x");
-            root.AddChild(circle1);
-            root.AddChild(rectangle);
+            //root.AddChild(circle1);
+            //root.AddChild(rectangle);
 
             Component container1 = new Composite("Container 1");
             Component circle2 = new Leaf("Circle 1");
@@ -34,6 +34,21 @@ namespace Composite
 
             root.Draw("");
             Console.WriteLine(root.CountLeaves());
+            Console.WriteLine(IsBinary(root));
+        }
+
+        static bool IsBinary(Component root)
+        {
+            if (root.GetChilds() == null)
+                return true;
+            if (root.GetChilds().Count != 0 && root.GetChilds().Count != 2)
+                return false;
+            bool flag = true;                
+            foreach (Component component in root.GetChilds())
+            {
+                flag &= IsBinary(component);
+            }
+            return flag;
         }
     }
 }
