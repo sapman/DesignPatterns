@@ -6,7 +6,7 @@ namespace ProtoType
 {
     public class Rectangle : Shape
     { 
-        private Point topLeft, bottomRight;
+        public Point topLeft, bottomRight;
 
         public Rectangle(Point topLeft, Point bottomRight)
         {

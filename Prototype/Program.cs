@@ -26,7 +26,7 @@ namespace ProtoType
             ShaprHolder cloned = shaprHolder.clone();
 
             shaprHolder.Add(new Rectangle(new Point(0, 1), new Point(4, 5)));
-
+            ((Rectangle)cloned[0]).topLeft.X = -5;
             Console.WriteLine(shaprHolder);
             Console.WriteLine(cloned);
 

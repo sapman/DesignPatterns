@@ -4,11 +4,11 @@ using System.Text;
 
 namespace ProtoType
 {
-    class ShapeContainer: IProtoType<ShapeContainer>
+    class ShaprHolder: IProtoType<ShaprHolder>
     {
         public List<Shape> lst;
 
-        public ShapeContainer()
+        public ShaprHolder()
         {
             lst = new List<Shape>();
         }
@@ -23,9 +23,9 @@ namespace ProtoType
             lst.Add(shape);
         }
 
-        public ShapeContainer clone()
+        public ShaprHolder clone()
         {
-            ShapeContainer temp = new ShapeContainer();
+            ShaprHolder temp = new ShaprHolder();
             foreach (Shape shape in lst)
             {
                 temp.Add(shape.clone());
