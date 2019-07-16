@@ -1,0 +1,10 @@
+C:\Users\HackerU\Desktop\16.07.2019-master\Memento\Memento\bin\Debug\Memento.exe.config
+C:\Users\HackerU\Desktop\16.07.2019-master\Memento\Memento\bin\Debug\Memento.exe
+C:\Users\HackerU\Desktop\16.07.2019-master\Memento\Memento\bin\Debug\Memento.pdb
+C:\Users\HackerU\Desktop\16.07.2019-master\Memento\Memento\obj\Debug\Memento.csprojAssemblyReference.cache
+C:\Users\HackerU\Desktop\16.07.2019-master\Memento\Memento\obj\Debug\Memento.Form1.resources
+C:\Users\HackerU\Desktop\16.07.2019-master\Memento\Memento\obj\Debug\Memento.Properties.Resources.resources
+C:\Users\HackerU\Desktop\16.07.2019-master\Memento\Memento\obj\Debug\Memento.csproj.GenerateResource.cache
+C:\Users\HackerU\Desktop\16.07.2019-master\Memento\Memento\obj\Debug\Memento.csproj.CoreCompileInputs.cache
+C:\Users\HackerU\Desktop\16.07.2019-master\Memento\Memento\obj\Debug\Memento.exe
+C:\Users\HackerU\Desktop\16.07.2019-master\Memento\Memento\obj\Debug\Memento.pdb
