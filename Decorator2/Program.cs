@@ -6,10 +6,14 @@ namespace Decorator2
     {
         static void Main(string[] args)
         {
-            IFormula formula = new Sub(new Add(new Mul((Number)5.0, (Number)2.0), new Div((Number)100, (Number)12)), new Add(new Mul((Number)3, (Number)4), (Number)7));
+            IFormula f1 = new Mul((Number)5, (Number)2);
+            IFormula f2 = new Div((Number)100, (Number)12);
+            IFormula f3 = new Mul((Number)3, (Number)4);
+            IFormula f4 = new Number(7);
+            IFormula formula = new Add(new Sub(new Add(f1, f2),f3),f4);
             Console.WriteLine(formula.ToString() + " = " + formula.GetResult());
-
-            formula = new Sub(new Add(new Mul((Number)30, (Number)2.0), new Div((Number)100, (Number)12)), new Add(new Mul((Number)3, (Number)4), (Number)7));
+            f1 = new Mul((Number)30, (Number)2);
+            formula = new Add(new Sub(new Add(f1, f2), f4), f4);
             Console.WriteLine(formula.ToString() + " = " + formula.GetResult());
         }
     }
