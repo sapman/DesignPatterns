@@ -25,7 +25,7 @@ namespace Test
 
             //Ten();
 
-            int[] arr = new int[] { 9,9,4};
+            int[] arr = new int[] { 9,4, 4};
             Console.WriteLine(string.Join(',',arr));
             Console.WriteLine(B1(arr, 0, arr.Length - 1).ToString());
             Console.WriteLine(arr[B1(arr, 0, arr.Length - 1)].ToString());
@@ -49,14 +49,16 @@ namespace Test
         /// Gets an array, which has every number twice but one number that appears only once, and returns the number that appears only once.
         /// </summary>
         /// <param name="arr">An "almost double array"</param>
+        /// <param name="i">array start index</param>
+        /// <param name="j">array end index</param>
         /// <returns>The number which appears only once.</returns>
         public static int B1(int[] arr, int i, int j)
         {
-            if (i == j) return i;
             if (j - i == 1)
             {
-                if (i == 0) return i;
-                return j;
+                // The answer can only appear on an even index
+                if (i % 2 == 0) return i; 
+                else return j;
             }
             int mid = (i + j) / 2;
             if (arr[mid] == arr[mid + 1])
@@ -74,6 +76,7 @@ namespace Test
                     return B1(arr, i, mid);
             }
         }
+
 
         public static void One()
         {
